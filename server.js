@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 });
 
 // Timestamp API route
-app.get("/api/date", (req, res) => {
+app.get("/api/:date?", (req, res) => {
   let { date } = req.params; // Get the date parameter
 
   let parsedDate;
